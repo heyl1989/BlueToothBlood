@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name">幻响血压仪</string>
+    <string name="about_str">\u3000\u3000北京幻响神州科技股份有限公司—一家致力打造国内顶端智能硬件的科技公司。成立于2006年底，公司主营创意数码、智能硬件产品等，经典创意产品有移动电源、蓝牙耳机、生肖音响、空气净化器、手机配件类产品；智能硬件产品有智能手环、智能空气盒子、智能音箱等。目前全国已有1000家礼品公司、500家零售店的渠道。\n\n \u3000\u30002015年初幻响神州上线幻响智能硬件营销加速器，正式进入加速器时代。于2016年2月29日正式拿到新三板挂牌函，智能硬件营销加速器模式第一股！股票代码836658。</string>
+    <string name="app_ok">确定</string>
+    <string name="app_cancel">取消</string>
+    <string name="prompt">提示</string>
+    <string name="ok">确定</string>
+    <string name="update_now">更新</string>
+    <string name="update_later">以后再说</string>
+    <string name="failure_down">下载失败</string>
+    <string name="start_down">开始下载</string>
+    <string name="failure_down_nosdcard">没有sd卡</string>
+    <string name="cancel_down">下载已取消</string>
+    <string name="down_progress">下载%d%%</string>
+
+    <string name="s_camera">手机拍照</string>
+    <string name="s_video">本地图库</string>
+    <string name="s_login">登录中...</string>
+    <string name="viewpager_indicator">%1$d/%2$d</string>
+
+    <string-array name="select_image">
+        <item>@string/s_camera</item>
+        <item>@string/s_video</item>
+    </string-array>
+
+    <string name="ble_not_supported">BLE is not supported</string>
+    <string name="label_data">Data:</string>
+    <string name="label_device_address">Device address:</string>
+    <string name="label_state">State:</string>
+    <string name="no_data">No data</string>
+    <string name="connected">Connected</string>
+    <string name="disconnected">Disconnected</string>
+    <string name="title_devices">BLE Device Scan</string>
+    <string name="error_bluetooth_not_supported">Bluetooth not supported.</string>
+
+    <string name="unknown_device">Unknown device</string>
+    <string name="unknown_characteristic">Unknown characteristic</string>
+    <string name="unknown_service">Unknown service</string>
+
+    <!-- Menu items -->
+    <string name="menu_connect">Connect</string>
+    <string name="menu_disconnect">Disconnect</string>
+    <string name="menu_scan">Scan</string>
+    <string name="menu_stop">Stop</string>
+</resources>

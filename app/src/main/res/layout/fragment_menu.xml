@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:background="#5ed7e7"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+        <com.blue.blueapplication.widgets.RoundedImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/iv_account_image"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_centerInParent="true"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/icon_head_portrait"
+            app:border_color="#eeeeee"
+            app:border_width="1dp"
+            app:mutate_background="true"
+            app:oval="true"></com.blue.blueapplication.widgets.RoundedImageView>
+
+
+        <TextView
+            android:id="@+id/tv_account_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:gravity="center"
+            android:textColor="#ffffff"
+            android:textSize="16sp" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_main_page"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="27dp"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@mipmap/leftbar_home"
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_marginLeft="6dp"
+            android:gravity="center"
+            android:text="首页"
+            android:textColor="#999999"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="25dp"
+        android:background="#5ed7e7"></View>
+
+    <LinearLayout
+        android:id="@+id/ll_about_page"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="27dp"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@mipmap/more_icon"
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_marginLeft="6dp"
+            android:gravity="center"
+            android:text="更多"
+            android:textColor="#999999"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="25dp"
+        android:background="#5ed7e7"></View>
+
+
+</LinearLayout>

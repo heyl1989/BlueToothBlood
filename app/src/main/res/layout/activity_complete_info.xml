@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#5ed7e7"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:src="@mipmap/btn_back"
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="个人信息"
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tv_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="编辑"
+            android:textColor="#ffffff"
+            android:textSize="15sp" />
+
+    </RelativeLayout>
+
+
+    <com.blue.blueapplication.widgets.RoundedImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/iv_account_image"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_centerInParent="true"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/icon_head_portrait"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="60dp"
+        app:border_color="#eeeeee"
+        app:border_width="1dp"
+        app:mutate_background="true"
+        app:oval="true"></com.blue.blueapplication.widgets.RoundedImageView>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#45cbde"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <TextView
+            android:id="@+id/tv_nick_remind"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="昵称"
+            android:textColor="#ffffff"
+            android:textSize="15sp" />
+
+
+        <EditText
+            android:id="@+id/edt_nickname"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@id/tv_nick_remind"
+            android:background="#00000000"
+            android:gravity="center_vertical"
+            android:textColor="#ffffff"
+            android:textColorHint="#eeeeee"
+            android:textSize="15sp" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:background="#45cbde"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <TextView
+            android:id="@+id/edt_height_remind"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:text="身高"
+            android:textColor="#ffffff"
+            android:textSize="15sp" />
+
+
+        <TextView
+            android:id="@+id/edt_height"
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:background="#00000000"
+            android:gravity="center_vertical"
+            android:layout_toRightOf="@id/edt_height_remind"
+            android:hint=" "
+            android:inputType="number"
+            android:maxLength="3"
+            android:textColor="#ffffff"
+            android:textColorHint="#eeeeee"
+            android:textSize="15sp" />
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:layout_toRightOf="@id/edt_height"
+            android:text="cm"
+            android:textColor="#ffffff"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:id="@+id/iv_height"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:visibility="gone"
+            android:paddingRight="10dp"
+            android:paddingLeft="20dp"
+            android:src="@mipmap/down_arrow"  />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="10dp"
+        android:background="#dddddd"></View>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#45cbde"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <TextView
+            android:id="@+id/edt_weight_remind"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:text="体重"
+            android:textColor="#ffffff"
+            android:textSize="15sp" />
+
+
+        <TextView
+            android:id="@+id/edt_weight"
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:background="#00000000"
+            android:layout_toRightOf="@id/edt_weight_remind"
+            android:gravity="center_vertical"
+            android:hint=" "
+            android:inputType="number"
+            android:maxLength="3"
+            android:textColor="#ffffff"
+            android:textColorHint="#eeeeee"
+            android:textSize="15sp" />
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:layout_toRightOf="@id/edt_weight"
+            android:text="kg"
+            android:textColor="#ffffff"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:id="@+id/iv_weight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:visibility="gone"
+            android:paddingRight="10dp"
+            android:paddingLeft="20dp"
+            android:src="@mipmap/down_arrow"  />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="10dp"
+        android:background="#dddddd"></View>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#45cbde"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <TextView
+            android:id="@+id/edt_birthday_remind"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:text="生日"
+            android:textColor="#ffffff"
+            android:textSize="15sp" />
+
+
+        <TextView
+            android:id="@+id/edt_birthday"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:background="#00000000"
+            android:layout_toRightOf="@id/edt_birthday_remind"
+            android:gravity="center_vertical"
+            android:hint=" "
+            android:maxLength="10"
+            android:textColor="#ffffff"
+            android:textColorHint="#eeeeee"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:id="@+id/iv_birthday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:visibility="gone"
+            android:paddingRight="10dp"
+            android:paddingLeft="20dp"
+            android:src="@mipmap/down_arrow"  />
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="10dp"
+        android:background="#dddddd"></View>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#45cbde"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        >
+
+        <TextView
+            android:id="@+id/edt_gender_remind"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:text="性别"
+            android:textColor="#ffffff"
+            android:textSize="15sp" />
+
+
+        <TextView
+            android:id="@+id/edt_gender"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:background="#00000000"
+            android:gravity="center_vertical"
+            android:hint=" "
+            android:layout_toRightOf="@id/edt_gender_remind"
+            android:textColor="#ffffff"
+            android:textColorHint="#eeeeee"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:id="@+id/iv_gender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:visibility="gone"
+            android:paddingRight="10dp"
+            android:paddingLeft="20dp"
+            android:src="@mipmap/down_arrow" />
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:background="#45cbde"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <TextView
+            android:id="@+id/tv_bmi"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:text="BMI"
+            android:textColor="#ffffff"
+            android:textSize="15sp" />
+
+
+        <TextView
+            android:id="@+id/edt_bmi"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:background="#00000000"
+            android:gravity="center_vertical"
+            android:hint="0.0"
+            android:inputType="numberDecimal"
+            android:textColor="#ffffff"
+            android:textColorHint="#eeeeee"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+
+</LinearLayout>
